@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/aup4"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c4"
+        app:layout_constraintEnd_toEndOf="@+id/absent"
+        app:layout_constraintStart_toStartOf="@+id/absent" />
+
+    <TextView
+        android:id="@+id/per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:text="%"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/Co"
+        app:layout_constraintTop_toTopOf="@+id/Co" />
+
+    <TextView
+        android:id="@+id/absent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:text="ABSENT"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/Co"
+        app:layout_constraintTop_toTopOf="@+id/Co" />
+
+    <TextView
+        android:id="@+id/present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:text="PRESENT"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/Co"
+        app:layout_constraintTop_toTopOf="@+id/Co" />
+
+    <Button
+        android:id="@+id/up1"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c1"
+        app:layout_constraintEnd_toEndOf="@+id/present"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/present" />
+
+    <Button
+        android:id="@+id/dn1"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/up1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/up1"
+        app:layout_constraintTop_toBottomOf="@+id/up1" />
+
+    <Button
+        android:id="@+id/up2"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c2"
+        app:layout_constraintEnd_toEndOf="@+id/present"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="@+id/present" />
+
+    <Button
+        android:id="@+id/dn2"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/up2"
+        app:layout_constraintStart_toStartOf="@+id/up2"
+        app:layout_constraintTop_toBottomOf="@+id/up2" />
+
+    <Button
+        android:id="@+id/up3"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c3"
+        app:layout_constraintEnd_toEndOf="@+id/present"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/present" />
+
+    <Button
+        android:id="@+id/dn3"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/up3"
+        app:layout_constraintStart_toStartOf="@+id/up3"
+        app:layout_constraintTop_toBottomOf="@+id/up3" />
+
+    <Button
+        android:id="@+id/dn4"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        app:layout_constraintEnd_toEndOf="@+id/up4"
+        app:layout_constraintStart_toStartOf="@+id/up4"
+        app:layout_constraintTop_toBottomOf="@+id/up4" />
+
+    <Button
+        android:id="@+id/up5"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c5"
+        app:layout_constraintEnd_toEndOf="@+id/present"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/present" />
+
+    <Button
+        android:id="@+id/dn5"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        app:layout_constraintEnd_toEndOf="@+id/up5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/up5"
+        app:layout_constraintTop_toBottomOf="@+id/up5" />
+
+    <Button
+        android:id="@+id/up6"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c6"
+        app:layout_constraintEnd_toEndOf="@+id/present"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/present" />
+
+    <Button
+        android:id="@+id/up4"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c4"
+        app:layout_constraintEnd_toEndOf="@+id/present"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/present" />
+
+    <Button
+        android:id="@+id/dn6"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/up6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/up6"
+        app:layout_constraintTop_toBottomOf="@+id/up6" />
+
+    <TextView
+        android:id="@+id/p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c3"
+        app:layout_constraintEnd_toEndOf="@+id/up3"
+        app:layout_constraintStart_toStartOf="@+id/up3" />
+
+    <TextView
+        android:id="@+id/p4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c4"
+        app:layout_constraintEnd_toEndOf="@+id/up4"
+        app:layout_constraintStart_toStartOf="@+id/up4" />
+
+    <TextView
+        android:id="@+id/p5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c5"
+        app:layout_constraintEnd_toEndOf="@+id/up5"
+        app:layout_constraintStart_toStartOf="@+id/up5" />
+
+    <TextView
+        android:id="@+id/p6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c6"
+        app:layout_constraintEnd_toEndOf="@+id/up6"
+        app:layout_constraintStart_toStartOf="@+id/up6" />
+
+    <!--    Absent counter -->
+
+    <!--    Percentage  -->
+
+    <TextView
+        android:id="@+id/per1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c1"
+        app:layout_constraintEnd_toEndOf="@+id/per"
+        app:layout_constraintStart_toStartOf="@+id/per"
+        tools:text="0%" />
+
+    <TextView
+        android:id="@+id/per2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c2"
+        app:layout_constraintEnd_toEndOf="@+id/per"
+        app:layout_constraintStart_toStartOf="@+id/per"
+        tools:text="0%" />
+
+    <TextView
+        android:id="@+id/per3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c3"
+        app:layout_constraintEnd_toEndOf="@+id/per"
+        app:layout_constraintStart_toStartOf="@+id/per"
+        tools:text="0%" />
+
+    <TextView
+        android:id="@+id/per4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c4"
+        app:layout_constraintEnd_toEndOf="@+id/per"
+        app:layout_constraintStart_toStartOf="@+id/per"
+        tools:text="0%" />
+
+    <TextView
+        android:id="@+id/per5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c5"
+        app:layout_constraintEnd_toEndOf="@+id/per"
+        app:layout_constraintStart_toStartOf="@+id/per"
+        tools:text="0%" />
+
+    <TextView
+        android:id="@+id/per6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c6"
+        app:layout_constraintEnd_toEndOf="@+id/per"
+        app:layout_constraintStart_toStartOf="@+id/per"
+        tools:text="0%" />
+
+
+    <Button
+        android:id="@+id/aup1"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c1"
+        app:layout_constraintEnd_toEndOf="@+id/absent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="@+id/absent" />
+
+    <Button
+        android:id="@+id/adn1"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/aup1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/aup1"
+        app:layout_constraintTop_toBottomOf="@+id/aup1" />
+
+    <Button
+        android:id="@+id/aup2"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c2"
+        app:layout_constraintEnd_toEndOf="@+id/absent"
+        app:layout_constraintStart_toStartOf="@+id/absent" />
+
+    <Button
+        android:id="@+id/adn2"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/aup2"
+        app:layout_constraintStart_toStartOf="@+id/aup2"
+        app:layout_constraintTop_toBottomOf="@+id/aup2" />
+
+    <Button
+        android:id="@+id/aup3"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c3"
+        app:layout_constraintEnd_toEndOf="@+id/absent"
+        app:layout_constraintStart_toStartOf="@+id/absent" />
+
+    <Button
+        android:id="@+id/adn3"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/aup3"
+        app:layout_constraintStart_toStartOf="@+id/aup3"
+        app:layout_constraintTop_toBottomOf="@+id/aup3" />
+
+    <Button
+        android:id="@+id/adn4"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        app:layout_constraintEnd_toEndOf="@+id/aup4"
+        app:layout_constraintStart_toStartOf="@+id/aup4"
+        app:layout_constraintTop_toBottomOf="@+id/aup4" />
+
+    <Button
+        android:id="@+id/aup5"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c5"
+        app:layout_constraintEnd_toEndOf="@+id/absent"
+        app:layout_constraintStart_toStartOf="@+id/absent" />
+
+    <Button
+        android:id="@+id/adn5"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/aup5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/aup5"
+        app:layout_constraintTop_toBottomOf="@+id/aup5" />
+
+    <Button
+        android:id="@+id/aup6"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/up"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/c6"
+        app:layout_constraintEnd_toEndOf="@+id/absent"
+        app:layout_constraintStart_toStartOf="@+id/absent" />
+
+    <Button
+        android:id="@+id/adn6"
+        android:layout_width="76dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/down"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/aup6"
+        app:layout_constraintStart_toStartOf="@+id/aup6"
+        app:layout_constraintTop_toBottomOf="@+id/aup6" />
+
+    <TextView
+        android:id="@+id/a6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c6"
+        app:layout_constraintEnd_toEndOf="@+id/aup6"
+        app:layout_constraintStart_toStartOf="@+id/aup6" />
+
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c2"
+        app:layout_constraintEnd_toEndOf="@+id/aup2"
+        app:layout_constraintStart_toStartOf="@+id/aup2" />
+
+    <TextView
+        android:id="@+id/a5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c5"
+        app:layout_constraintEnd_toEndOf="@+id/aup5"
+        app:layout_constraintStart_toStartOf="@+id/aup5" />
+
+    <TextView
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c3"
+        app:layout_constraintEnd_toEndOf="@+id/aup3"
+        app:layout_constraintStart_toStartOf="@+id/aup3" />
+
+    <TextView
+        android:id="@+id/a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c4"
+        app:layout_constraintEnd_toEndOf="@+id/aup4"
+        app:layout_constraintStart_toStartOf="@+id/aup4" />
+
+    <TextView
+        android:id="@+id/Co"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Course"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c1"
+        app:layout_constraintEnd_toEndOf="@+id/up1"
+        app:layout_constraintStart_toStartOf="@+id/up1" />
+
+    <TextView
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c2"
+        app:layout_constraintEnd_toEndOf="@+id/up2"
+        app:layout_constraintStart_toStartOf="@+id/up2" />
+
+
+    <TextView
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/c1"
+        app:layout_constraintEnd_toEndOf="@+id/aup1"
+        app:layout_constraintStart_toStartOf="@+id/aup1" />
+
+    <EditText
+        android:id="@+id/c1"
+        android:layout_width="102dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="course 1"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/c2"
+        app:layout_constraintTop_toBottomOf="@+id/Co" />
+
+    <EditText
+        android:id="@+id/c2"
+        android:layout_width="101dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="course 2"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/c3"
+        app:layout_constraintTop_toBottomOf="@+id/c1" />
+
+    <EditText
+        android:id="@+id/c3"
+        android:layout_width="101dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="course 3"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/c4"
+        app:layout_constraintTop_toBottomOf="@+id/c2" />
+
+    <EditText
+        android:id="@+id/c4"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="course 4"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/c5"
+        app:layout_constraintTop_toBottomOf="@+id/c3" />
+
+    <EditText
+        android:id="@+id/c5"
+        android:layout_width="102dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="course 5"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/c6"
+        app:layout_constraintTop_toBottomOf="@+id/c4" />
+
+    <EditText
+        android:id="@+id/c6"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="course 6"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c5" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="67dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="4dp"
+        android:text="+"
+        app:icon="@android:drawable/ic_menu_upload_you_tube"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
